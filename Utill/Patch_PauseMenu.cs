@@ -29,7 +29,7 @@ namespace InGameExit.Utill
 			Vector2 minSizeGui = MyGuiControlButton.GetVisualStyle(MyGuiControlButtonStyleEnum.Default).NormalTexture.MinSizeGui;
 			Vector2 leftButtonPositionOrigin = MyGuiManager.ComputeFullscreenGuiCoordinate(MyGuiDrawAlignEnum.HORISONTAL_LEFT_AND_VERTICAL_BOTTOM) + new Vector2(minSizeGui.X / 2f, 0f) + new Vector2(15f, 0f) / MyGuiConstants.GUI_OPTIMAL_SIZE;
 
-			MyGuiControlButton openBtn = new MyGuiControlButton(new Vector2(leftButtonPositionOrigin.X + 0.2f, 0.999f), MyGuiControlButtonStyleEnum.Default, originAlign: MyGuiDrawAlignEnum.HORISONTAL_CENTER_AND_VERTICAL_BOTTOM, text: new StringBuilder("Exit To Windows"), onButtonClick: ExitGame)
+			MyGuiControlButton openBtn = new MyGuiControlButton(new Vector2(leftButtonPositionOrigin.X + 0.2f, 0.993f), MyGuiControlButtonStyleEnum.Default, originAlign: MyGuiDrawAlignEnum.HORISONTAL_CENTER_AND_VERTICAL_BOTTOM, text: new StringBuilder("Exit To Windows"), onButtonClick: ExitGame)
 			{
 				BorderEnabled = false,
 				BorderSize = 0,
